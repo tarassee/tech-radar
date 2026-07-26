@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="description" content="Tech Radar: a tool to visualize technology choices">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tech Radar</title>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="radar.js"></script>
+
+<link rel="stylesheet" href="radar.css">
+<style>
+body {
+  margin: 0;
+}
+.year-toggle {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  margin: 24px 0 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.year-toggle button {
+  padding: 8px 24px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  cursor: pointer;
+}
+.year-toggle button:first-child {
+  border-radius: 6px 0 0 6px;
+}
+.year-toggle button:last-child {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+.year-toggle button.active {
+  background: #E0F2EF;
+  outline: 2px solid #00876C;
+  z-index: 1;
+  position: relative;
+}
+.about {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.about__intro {
+  text-align: center;
+  color: #555;
+  max-width: 640px;
+  margin: 0 auto 24px;
+  line-height: 1.5;
+}
+.ring-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.ring-card {
+  border: 1px solid #e3e3e3;
+  border-top: 4px solid var(--ring-color);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fafafa;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.ring-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.ring-card__badge {
+  display: inline-block;
+  background: var(--ring-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+.ring-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+</style>
+</head>
+
+<body>
+
+<div class="year-toggle" id="year-toggle"></div>
+
+<svg id="radar"></svg>
+
+<script>
+var radarData = null;
+var selectedYear = null;
+
+function renderRadar(year) {
+  selectedYear = year;
+  var config = radarData.years[year];
+  d3.select("svg#radar").selectAll("*").remove();
+  radar_visualization({
+    repo_url: "https://github.com/tarassee/tech-radar",
+    title: config.title,
+    date: config.date,
+    quadrants: [
+      { name: "Languages & Frameworks" },
+      { name: "Platform & Infrastructure" },
+      { name: "Data Management" },
+      { name: "Techniques, Tools & AI" },
+    ],
+    rings: [
+      { name: "ADOPT", color: "#00876C" },
+      { name: "TRIAL", color: "#5561D6" },
+      { name: "ASSESS", color: "#E39D00" },
+      { name: "HOLD", color: "#C65154" }
+    ],
+    entries: config.entries
+  });
+  document.querySelectorAll("#year-toggle button").forEach(function(btn) {
+    btn.classList.toggle("active", btn.textContent === year);
+  });
+}
+
+fetch('./config.json').then(function(response) {
+  return response.json();
+}).then(function(data) {
+  radarData = data;
+  var years = Object.keys(data.years).sort();
+  var toggle = document.getElementById("year-toggle");
+  years.forEach(function(year) {
+    var btn = document.createElement("button");
+    btn.textContent = year;
+    btn.onclick = function() { renderRadar(year); };
+    toggle.appendChild(btn);
+  });
+  renderRadar(years[years.length - 1]);
+}).catch(function(err) {
+  console.log('Error loading config.json', err);
+});
+</script>
+
+<section class="about">
+  <h3>What is the Tech Radar?</h3>
+  <p class="about__intro">
+    A living map of the technologies I work with. Every tool lands in one of four rings,
+    from battle-tested favourites in the center to things I deliberately keep at arm's length.
+  </p>
+  <div class="ring-cards">
+    <div class="ring-card" style="--ring-color: #00876C">
+      <div class="ring-card__badge">Adopt</div>
+      <p>My daily drivers. I reach for these by default and know them inside out.</p>
+    </div>
+    <div class="ring-card" style="--ring-color: #5561D6">
+      <div class="ring-card__badge">Trial</div>
+      <p>Proven useful on real work. I'm building confidence with these before they become daily drivers.</p>
+    </div>
+    <div class="ring-card" style="--ring-color: #E39D00">
+      <div class="ring-card__badge">Assess</div>
+      <p>On my curiosity list. I'm exploring these in side projects and prototypes.</p>
+    </div>
+    <div class="ring-card" style="--ring-color: #C65154">
+      <div class="ring-card__badge">Hold</div>
+      <p>Been there, done that. I still maintain things built with these, but wouldn't start anything new.</p>
+    </div>
+  </div>
+</section>
+
+<p style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #7a7a7a;">
+Inspired by <a href="https://github.com/zalando/tech-radar">Zalando</a> and
+<a href="https://www.thoughtworks.com/radar">ThoughtWorks</a>
+</p>
+
+</body>
+</html>

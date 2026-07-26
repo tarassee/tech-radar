@@ -1,0 +1,22 @@
+{
+  "years": {
+    "2025": {
+      "date": "Last updated 12.2025",
+      "title": "Tech Radar 2025",
+      "entries": [
+        { "label": "Kotlin", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Spring Boot", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Kafka", "quadrant": 2, "ring": 1, "moved": 2 }
+      ]
+    },
+    "2026": {
+      "date": "Last updated 07.2026",
+      "title": "Tech Radar 2026",
+      "entries": [
+        { "label": "Kotlin", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Spring Boot", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Kafka", "quadrant": 2, "ring": 0, "moved": 1 }
+      ]
+    }
+  }
+}
