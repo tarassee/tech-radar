@@ -4,228 +4,132 @@
       "date": "Last updated 12.2024",
       "title": "Tech Radar 2024",
       "entries": [
-        {
-          "label": "Java",
-          "quadrant": 0,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "Spring",
-          "quadrant": 0,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "SQL",
-          "quadrant": 0,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "Apache Camel",
-          "quadrant": 0,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "Groovy",
-          "quadrant": 0,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "JavaScript",
-          "quadrant": 0,
-          "ring": 2,
-          "moved": 0
-        },
-        {
-          "label": "Vue.js",
-          "quadrant": 0,
-          "ring": 2,
-          "moved": 0
-        },
-        {
-          "label": "Python",
-          "quadrant": 0,
-          "ring": 2,
-          "moved": 0
-        },
-        {
-          "label": "SAP Commerce Cloud (Hybris)",
-          "quadrant": 1,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "Docker",
-          "quadrant": 1,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "AWS",
-          "quadrant": 1,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "GitHub Actions",
-          "quadrant": 1,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "Kubernetes",
-          "quadrant": 1,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "Helm",
-          "quadrant": 1,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "Grafana",
-          "quadrant": 1,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "ELK",
-          "quadrant": 1,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "ArgoCD",
-          "quadrant": 1,
-          "ring": 2,
-          "moved": 0
-        },
-        {
-          "label": "Flux",
-          "quadrant": 1,
-          "ring": 2,
-          "moved": 0
-        },
-        {
-          "label": "MySQL",
-          "quadrant": 2,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "Solr",
-          "quadrant": 2,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "PostgreSQL",
-          "quadrant": 2,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "RabbitMQ",
-          "quadrant": 2,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "Redis",
-          "quadrant": 2,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "Bloomreach",
-          "quadrant": 2,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "ArtemisMQ",
-          "quadrant": 2,
-          "ring": 2,
-          "moved": 0
-        },
-        {
-          "label": "DynamoDB",
-          "quadrant": 2,
-          "ring": 2,
-          "moved": 0
-        },
-        {
-          "label": "Microservices",
-          "quadrant": 3,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "TDD",
-          "quadrant": 3,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "Code review",
-          "quadrant": 3,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "JUnit + Mockito",
-          "quadrant": 3,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "Jira / Confluence",
-          "quadrant": 3,
-          "ring": 0,
-          "moved": 0
-        },
-        {
-          "label": "Spock",
-          "quadrant": 3,
-          "ring": 1,
-          "moved": 0
-        },
-        {
-          "label": "Mentoring & interviewing",
-          "quadrant": 3,
-          "ring": 1,
-          "moved": 0
-        }
+        { "label": "Java", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "SQL", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Spring", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "JavaScript", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "Python", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "Vue.js", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "Apache Camel", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "Groovy", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "C/C++", "quadrant": 0, "ring": 3, "moved": 0 },
+        { "label": "Go", "quadrant": 0, "ring": 3, "moved": 0 },
+
+        { "label": "SAP Commerce Cloud (Hybris)", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "Docker", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "Grafana", "quadrant": 1, "ring": 1, "moved": 0 },
+        { "label": "ELK", "quadrant": 1, "ring": 1, "moved": 0 },
+        { "label": "Azure", "quadrant": 1, "ring": 2, "moved": 0 },
+        { "label": "Kubernetes", "quadrant": 1, "ring": 2, "moved": 0 },
+        { "label": "Flux", "quadrant": 1, "ring": 2, "moved": 0 },
+        { "label": "Helm", "quadrant": 1, "ring": 2, "moved": 0 },
+
+        { "label": "MySQL", "quadrant": 2, "ring": 0, "moved": 0 },
+        { "label": "RabbitMQ", "quadrant": 2, "ring": 0, "moved": 0 },
+        { "label": "Azure Blob Storage", "quadrant": 2, "ring": 0, "moved": 0 },
+        { "label": "PostgreSQL", "quadrant": 2, "ring": 1, "moved": 0 },
+        { "label": "Solr", "quadrant": 2, "ring": 1, "moved": 0 },
+        { "label": "Bloomreach", "quadrant": 2, "ring": 1, "moved": 0 },
+        { "label": "Redis", "quadrant": 2, "ring": 1, "moved": 0 },
+        { "label": "DynamoDB", "quadrant": 2, "ring": 2, "moved": 0 },
+        { "label": "ActiveMQ", "quadrant": 2, "ring": 3, "moved": 0 },
+
+        { "label": "TDD", "quadrant": 3, "ring": 0, "moved": 0 },
+        { "label": "Tech solution documentation", "quadrant": 3, "ring": 0, "moved": 0 },
+        { "label": "Pair coding", "quadrant": 3, "ring": 2, "moved": 0 }
       ]
     },
     "2025": {
       "date": "Last updated 12.2025",
       "title": "Tech Radar 2025",
       "entries": [
-        {
-          "label": "Kotlin",
-          "quadrant": 0,
-          "ring": 1,
-          "moved": 2
-        }
+        { "label": "Kotlin", "quadrant": 0, "ring": 0, "moved": 2 },
+        { "label": "SQL", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Spring", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Python", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "Go", "quadrant": 0, "ring": 1, "moved": 1 },
+        { "label": "Kafka Streams", "quadrant": 0, "ring": 1, "moved": 2 },
+        { "label": "JavaScript", "quadrant": 0, "ring": 3, "moved": -1 },
+        { "label": "Apache Camel", "quadrant": 0, "ring": 3, "moved": -1 },
+        { "label": "Groovy", "quadrant": 0, "ring": 3, "moved": -1 },
+        { "label": "Vue.js", "quadrant": 0, "ring": 3, "moved": -1 },
+
+        { "label": "Docker", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "AWS", "quadrant": 1, "ring": 0, "moved": 2 },
+        { "label": "VictoriaLogs", "quadrant": 1, "ring": 0, "moved": 2 },
+        { "label": "VictoriaMetrics", "quadrant": 1, "ring": 0, "moved": 2 },
+        { "label": "Grafana", "quadrant": 1, "ring": 0, "moved": 1 },
+        { "label": "ELK", "quadrant": 1, "ring": 1, "moved": 0 },
+        { "label": "SAP Commerce Cloud (Hybris)", "quadrant": 1, "ring": 3, "moved": -1 },
+        { "label": "Azure", "quadrant": 1, "ring": 3, "moved": -1 },
+        { "label": "Kubernetes", "quadrant": 1, "ring": 3, "moved": -1 },
+        { "label": "Flux", "quadrant": 1, "ring": 3, "moved": -1 },
+        { "label": "Helm", "quadrant": 1, "ring": 3, "moved": -1 },
+
+        { "label": "MySQL", "quadrant": 2, "ring": 0, "moved": 0 },
+        { "label": "RabbitMQ", "quadrant": 2, "ring": 0, "moved": 0 },
+        { "label": "Azure Blob Storage", "quadrant": 2, "ring": 0, "moved": 0 },
+        { "label": "Kafka", "quadrant": 2, "ring": 1, "moved": 2 },
+        { "label": "PostgreSQL", "quadrant": 2, "ring": 1, "moved": 0 },
+        { "label": "AWS SQS", "quadrant": 2, "ring": 1, "moved": 2 },
+        { "label": "AWS SNS", "quadrant": 2, "ring": 1, "moved": 2 },
+        { "label": "AWS Lambda", "quadrant": 2, "ring": 1, "moved": 2 },
+        { "label": "Solr", "quadrant": 2, "ring": 3, "moved": -1 },
+        { "label": "Bloomreach", "quadrant": 2, "ring": 3, "moved": -1 },
+        { "label": "Redis", "quadrant": 2, "ring": 3, "moved": -1 },
+
+        { "label": "TDD", "quadrant": 3, "ring": 0, "moved": 0 },
+        { "label": "Tech solution documentation", "quadrant": 3, "ring": 0, "moved": 0 },
+        { "label": "ADR", "quadrant": 3, "ring": 1, "moved": 2 },
+        { "label": "Trunk-based development", "quadrant": 3, "ring": 1, "moved": 2 },
+        { "label": "Cursor", "quadrant": 3, "ring": 1, "moved": 2 },
+        { "label": "Windsurf", "quadrant": 3, "ring": 1, "moved": 2 },
+        { "label": "Claude Code", "quadrant": 3, "ring": 1, "moved": 2 },
+        { "label": "CodeRabbit", "quadrant": 3, "ring": 1, "moved": 2 }
       ]
     },
     "2026": {
       "date": "Last updated 07.2026",
       "title": "Tech Radar 2026",
       "entries": [
-        {
-          "label": "Kotlin",
-          "quadrant": 0,
-          "ring": 0,
-          "moved": 1
-        }
+        { "label": "Kotlin", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "SQL", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Spring", "quadrant": 0, "ring": 0, "moved": 0 },
+        { "label": "Kafka Streams", "quadrant": 0, "ring": 0, "moved": 1 },
+        { "label": "Python", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "Go", "quadrant": 0, "ring": 1, "moved": 0 },
+        { "label": "Java", "quadrant": 0, "ring": 3, "moved": -1 },
+        { "label": "JavaScript", "quadrant": 0, "ring": 3, "moved": 0 },
+        { "label": "Vue.js", "quadrant": 0, "ring": 3, "moved": 0 },
+
+        { "label": "Docker", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "AWS", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "VictoriaLogs", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "VictoriaMetrics", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "Grafana", "quadrant": 1, "ring": 0, "moved": 0 },
+        { "label": "Terraform", "quadrant": 1, "ring": 2, "moved": 2 },
+        { "label": "SAP Commerce Cloud (Hybris)", "quadrant": 1, "ring": 3, "moved": 0 },
+
+        { "label": "Kafka", "quadrant": 2, "ring": 0, "moved": 1 },
+        { "label": "PostgreSQL", "quadrant": 2, "ring": 0, "moved": 1 },
+        { "label": "AWS SQS", "quadrant": 2, "ring": 0, "moved": 1 },
+        { "label": "AWS SNS", "quadrant": 2, "ring": 0, "moved": 1 },
+        { "label": "AWS Lambda", "quadrant": 2, "ring": 0, "moved": 1 },
+        { "label": "Apache Airflow", "quadrant": 2, "ring": 2, "moved": 2 },
+        { "label": "RabbitMQ", "quadrant": 2, "ring": 3, "moved": -1 },
+        { "label": "Azure Blob Storage", "quadrant": 2, "ring": 3, "moved": -1 },
+        { "label": "MySQL", "quadrant": 2, "ring": 3, "moved": -1 },
+        { "label": "Solr / Bloomreach", "quadrant": 2, "ring": 3, "moved": 0 },
+        { "label": "Redis", "quadrant": 2, "ring": 3, "moved": 0 },
+
+        { "label": "TDD", "quadrant": 3, "ring": 0, "moved": 0 },
+        { "label": "Tech solution documentation", "quadrant": 3, "ring": 0, "moved": 0 },
+        { "label": "ADR", "quadrant": 3, "ring": 0, "moved": 1 },
+        { "label": "Trunk-based development", "quadrant": 3, "ring": 0, "moved": 1 },
+        { "label": "Claude Code", "quadrant": 3, "ring": 0, "moved": 1 },
+        { "label": "CodeRabbit", "quadrant": 3, "ring": 0, "moved": 1 },
+        { "label": "RFC", "quadrant": 3, "ring": 1, "moved": 2 },
+        { "label": "Cursor", "quadrant": 3, "ring": 1, "moved": 0 }
       ]
     }
   }
