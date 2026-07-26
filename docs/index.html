@@ -42,6 +42,22 @@ body {
   z-index: 1;
   position: relative;
 }
+.radar-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  padding-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+.radar-inner {
+  display: flex;
+  justify-content: center;
+  width: 1450px;
+  margin: 0 auto;
+}
+svg#radar {
+  display: block;
+  flex: 0 0 auto;
+}
 .about {
   max-width: 900px;
   margin: 32px auto;
@@ -102,7 +118,11 @@ body {
 
 <div class="year-toggle" id="year-toggle"></div>
 
-<svg id="radar"></svg>
+<div class="radar-scroll">
+  <div class="radar-inner">
+    <svg id="radar"></svg>
+  </div>
+</div>
 
 <script>
 var radarData = null;
